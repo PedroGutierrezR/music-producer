@@ -23,9 +23,9 @@ header {
 }
 header .header-icons {
   width: 100%;
-  height: 50px;
   display: grid;
-  background-color: #47cfac;
+  background-color: #59d4db;
+  /* background-color: #333; */
 }
 header .header-icons__container {
   width: 300px;
@@ -44,7 +44,6 @@ header .header-icons__container {
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 50px;
 }
 
 nav .logo-container {
@@ -54,7 +53,7 @@ nav .logo-container {
 }
 
 nav .logo-container img {
-  width: 100px;
+  width: 150px;
 }
 
 nav .profile-container {
@@ -68,6 +67,8 @@ nav .profile-container a {
   border-bottom: 1px solid #333;
   font-size: 1.8rem;
 }
+
+/* Home Main */
 
 .home-main {
   display: grid;
@@ -92,7 +93,7 @@ nav .profile-container a {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 10px;
-  color: white;
+  color: #333;
 }
 .home-main__button {
   width: 110px;
