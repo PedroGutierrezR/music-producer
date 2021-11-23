@@ -98,13 +98,63 @@ nav .profile-container a {
 .home-main__button {
   width: 110px;
   height: 50px;
-  background-color: #47cfac;
-  display: grid;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 8px;
+  background-color: #333;
 }
 .home-main__button a {
   font-family: monospace;
   font-weight: 700;
   font-size: 1.8rem;
+  color: #59d4db;
+}
+/* From here we start with blogs.html */
+.blogs-main {
+  display: grid;
+}
+.blogs-news-container {
+  background-color: #e6e9ed;
+  padding: 0 50px 40px;
+}
+.blogs-news-container__left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  padding-left: 50px;
+}
+.blogs-news-container__img {
+  grid-column: 1;
+}
+.blogs-news-container__img img {
+  width: 700px;
+}
+.blogs-news-container__right {
+  grid-column: 2;
+  padding: 50px;
+}
+.blogs-news-container__left h3 {
+  padding: 10px 0;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+}
+.blogs-news-container__right h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+}
+.blogs-news-container__right p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-top: 10px;
+  color: #333;
+}
+.blogs-button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 30px;
+  border: 2px solid #59d4db;
+  border-radius: 8px;
 }
