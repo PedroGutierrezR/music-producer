@@ -189,10 +189,6 @@ nav .profile-container a {
   color: #fff;
 }
 
-.blogs-posts-container {
-  padding: 0 50px;
-}
-
 .blogs-posts-container h3 {
   font-size: 2.5rem;
   color: #333;
@@ -237,13 +233,20 @@ nav .profile-container a {
 }
 footer {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #333;
   border-top: 35px solid #59d4db;
-  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 footer p {
-  margin-top: 20px;
   font-size: 1.5rem;
   color: #fff;
+}
+
+/* From here we start with blog.html */
+
+.blogpost-img-container {
+  padding: 0 50px 40px;
 }
