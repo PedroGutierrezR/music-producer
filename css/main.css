@@ -239,6 +239,7 @@ footer {
   display: grid;
   justify-content: center;
   align-content: center;
+  text-align: center;
 }
 footer p {
   font-size: 1.5rem;
@@ -248,5 +249,64 @@ footer p {
 /* From here we start with blog.html */
 
 .blogpost-img-container {
+  padding: 40px 50px;
+}
+.blogpost-img-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+.blogpost-main-container {
   padding: 0 50px 40px;
+}
+.blogpost-main-container h3 {
+  border-bottom: 2px solid #e6e9ed;
+  font-size: 2.5rem;
+  color: #333;
+  padding-bottom: 20px;
+}
+.blogpost-main-container article h1 {
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+}
+.blogpost-main-container article p {
+  line-height: 2.5rem;
+  font-size: 2rem;
+  margin: 20px auto;
+  color: #333;
+}
+.contact-container {
+  width: 100%;
+  min-height: 250px;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: #e6e9ed;
+}
+.contact-container img {
+  width: 50px;
+  height: 50px;
+}
+.contact-container__left,
+.contact-container__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+.contact-container__left a,
+.contact-container__right a {
+  font-size: 2rem;
+  margin-left: 10px;
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+.contact-container__left p,
+.contact-container__right p {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #333;
 }
