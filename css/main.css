@@ -117,27 +117,22 @@ nav .profile-container a {
   color: #fff;
 }
 /* From here we start with blogs.html */
-.blogs-main {
-  display: grid;
-}
 .blogs-news-container {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: #e6e9ed;
-  padding: 0 50px 40px;
+  padding: 0 20px 40px;
   margin-bottom: 30px;
 }
-.blogs-news-container__left {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 2fr;
-}
+
 .blogs-news-container__left h3 {
   padding: 20px 0;
   font-size: 2.5rem;
   color: #333;
   font-weight: 700;
+  text-align: center;
 }
 .blogs-news-container__img {
-  grid-column: 1;
   display: grid;
   align-items: center;
 }
@@ -148,76 +143,59 @@ nav .profile-container a {
   border-radius: 5px;
 }
 
-.blogs-news-container__right {
-  display: grid;
-  grid-column: 2;
-  padding: 50px;
-  align-content: center;
-}
 .blogs-news-container__right h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #333;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .blogs-news-container__right p {
   font-size: 2rem;
   line-height: 2.8rem;
-  margin-top: 10px;
   color: #333;
+  margin-left: 15px;
 }
 .blogs-button {
   width: 100px;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
-  display: inline-block;
+  display: block;
   padding: 10px 15px;
-  margin-top: 30px;
+  margin: 20px auto;
   border: 1px solid #59d4db;
   border-radius: 8px;
   background-color: #333;
   color: #59d4db;
 }
 .blogs-button:hover {
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: inline-block;
-  padding: 10px 15px;
-  margin-top: 30px;
-  border: 1px solid #59d4db;
-  border-radius: 8px;
-  background-color: #333;
   color: #fff;
 }
-
+/* Articles Section */
+.articles-container {
+  display: grid;
+}
+.blogs-posts-container .blogs-posts__article {
+  padding: 10px;
+  max-width: 80%;
+  margin: 30px auto;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 3px 2px 11px -1px rgba(2, 3, 15, 1);
+}
+.blogs-posts-container .blogs-posts__article:hover {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.5s;
+}
 .blogs-posts-container h3 {
   font-size: 2.5rem;
   color: #333;
   border-bottom: 2px solid #e6e9ed;
   padding-bottom: 30px;
   text-align: center;
-}
-
-.blogs-posts-container .blogs-posts__article {
-  display: inline-block;
-  padding: 10px;
-  max-width: 30%;
-  margin: 50px 10px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  box-shadow: 3px 2px 11px -1px rgba(2, 3, 15, 1);
-}
-.blogs-posts-container .blogs-posts__article:hover {
-  display: inline-block;
-  padding: 8px;
-  max-width: 30%;
-  margin: 50px 10px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  background-color: #333;
-  color: #fff;
-  box-shadow: 3px 2px 11px -1px rgba(2, 3, 15, 1);
-  transition: all 0.5s;
 }
 
 .blogs-posts__article h4 {
@@ -251,13 +229,12 @@ footer p {
 /* From here we start with blog.html */
 
 .blogpost-img-container {
-  padding: 40px 50px;
+  padding: 30px 0;
   background-color: #e6e9ed;
   margin-bottom: 30px;
 }
 .blogpost-img-container img {
-  width: 70%;
-  min-width: 300px;
+  width: 90%;
   border-radius: 8px;
   display: block;
   margin: 0 auto;
@@ -284,11 +261,11 @@ footer p {
   color: #333;
 }
 .contact-container {
+  display: grid;
+  gap: 20px;
   width: 100%;
   min-height: 250px;
-  padding: 50px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
   justify-items: center;
   background-color: #e6e9ed;
 }
@@ -301,20 +278,20 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 50%;
+  width: 70%;
 }
 
 .contact-container__left a,
 .contact-container__right a {
   font-size: 2rem;
-  margin-left: 10px;
+  margin-left: 20px;
   color: #333;
   border-bottom: 1px solid #333;
 }
 .contact-container__left p,
 .contact-container__right p {
   font-size: 1.5rem;
-  margin: 10px;
+  margin: 10px 20px;
   color: #333;
 }
 
