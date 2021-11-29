@@ -27,7 +27,7 @@ header {
   grid-template-rows: 1fr 1fr;
 }
 header .header-icons {
-  width: 100%;
+  min-width: 320px;
   display: grid;
   background-color: #59d4db;
 }
@@ -38,7 +38,7 @@ header .header-icons__container {
   align-items: center;
   justify-content: space-around;
   justify-self: end;
-  margin-right: 50px;
+  margin: 0 auto;
 }
 .header-icons__container img {
   width: 30px;
@@ -87,10 +87,11 @@ nav .profile-container a {
 .home-main section {
   display: grid;
   grid-column: 2;
-  justify-items: center;
   height: 350px;
   margin-top: 80px;
   align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .home-main__title {

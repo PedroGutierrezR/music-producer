@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  nav .logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  nav .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+  nav .logo-container img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 900) {
+}
