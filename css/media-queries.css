@@ -1,19 +1,108 @@
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+  /* Navegation */
   nav .logo-container {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 50px;
+  }
+  nav .logo-container img {
+    width: 150px;
   }
   nav .profile-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 15px;
+    margin-right: 50px;
   }
-  nav .logo-container img {
-    width: 100px;
+  /* blogs.html */
+  .articles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+  }
+  .articles-container h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .post-1 {
+    grid-row: 2;
+  }
+  .post-2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .post-3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .post-4 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .post-5 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .post-6 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .blogs-posts-container .blogs-posts__article {
+    max-width: 70%;
   }
 }
 
-@media (max-width: 900) {
+@media (min-width: 900px) {
+  /* blogs.html */
+  .blogs-news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .blogs-news-container__left h3 {
+    text-align: start;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .blogs-news-container__right {
+    display: grid;
+    align-content: center;
+    margin-left: 40px;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+  }
+  .articles-container h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .post-1 {
+    grid-row: 2;
+  }
+  .post-2 {
+    grid-column: 2;
+    /* grid-row: 2; */
+  }
+  .post-3 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .post-4 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .post-5 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .post-6 {
+    grid-column: 3;
+    grid-row: 3;
+  }
 }

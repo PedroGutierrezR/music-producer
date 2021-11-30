@@ -53,18 +53,17 @@ nav {
 nav .logo-container {
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 15px;
 }
 
 nav .logo-container img {
-  width: 150px;
+  width: 100px;
 }
-
 nav .profile-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 15px;
 }
 nav .profile-container a {
   color: #333;
@@ -176,10 +175,12 @@ nav .profile-container a {
 /* Articles Section */
 .articles-container {
   display: grid;
+  margin-bottom: 50px;
 }
 .blogs-posts-container .blogs-posts__article {
   padding: 10px;
-  max-width: 80%;
+  min-width: 270px;
+  max-width: 50%;
   margin: 30px auto;
   border: 1px solid #333;
   border-radius: 8px;
@@ -268,6 +269,7 @@ footer p {
   min-height: 250px;
   padding: 20px 0;
   justify-items: center;
+  justify-content: center;
   background-color: #e6e9ed;
 }
 .contact-container img {
@@ -311,7 +313,7 @@ footer p {
 .esteban-container img {
   display: block;
   width: 90%;
-  margin: 0 auto;
+  margin: 15px auto;
   border-radius: 5px;
 }
 
