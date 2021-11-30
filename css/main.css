@@ -164,7 +164,7 @@ nav .profile-container a {
   font-weight: 700;
   display: block;
   padding: 10px 15px;
-  margin: 20px auto;
+  margin: 30px auto;
   border: 1px solid #59d4db;
   border-radius: 8px;
   background-color: #333;
@@ -189,6 +189,7 @@ nav .profile-container a {
   background-color: #333;
   color: #fff;
   transition: all 0.5s;
+  padding: 9px;
 }
 .blogs-posts-container h3 {
   font-size: 2.5rem;
@@ -278,7 +279,7 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 70%;
+  width: 80%;
 }
 
 .contact-container__left a,
@@ -291,7 +292,8 @@ footer p {
 .contact-container__left p,
 .contact-container__right p {
   font-size: 1.5rem;
-  margin: 10px 20px;
+  margin-left: 20px;
+  margin-top: 10px;
   color: #333;
 }
 
@@ -299,24 +301,23 @@ footer p {
 
 .esteban-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   background-color: #e6e9ed;
 }
 
 .esteban-container .esteban-container__left {
-  display: grid;
-  justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 .esteban-container img {
-  width: 300px;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
 .esteban-container .esteban-container__right {
-  display: grid;
-  align-content: center;
-  padding: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 .esteban-container__right h1 {
   font-size: 3rem;
@@ -328,9 +329,6 @@ footer p {
   line-height: 2.8rem;
 }
 
-.projects-container-main {
-  padding: 0 50px 40px;
-}
 .projects-container-main h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -341,7 +339,7 @@ footer p {
 
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px;
 }
 
 .projects-container__content {
@@ -350,6 +348,7 @@ footer p {
 .projects-container__content h3 {
   font-size: 2rem;
   color: #333;
+  text-align: center;
 }
 .projects-container__content p {
   font-size: 1.8rem;
