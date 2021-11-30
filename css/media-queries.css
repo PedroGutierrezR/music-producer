@@ -55,15 +55,18 @@
 }
 
 @media (min-width: 900px) {
-  /* blogs.html */
   .blogs-news-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .blogs-news-container__left h3 {
-    text-align: start;
     margin-left: 10px;
     padding: 10px;
+    text-align: start;
+    margin-left: 30px;
+  }
+  .blogs-news-container__img img {
+    width: 90%;
   }
   .blogs-news-container__right {
     display: grid;
@@ -104,5 +107,20 @@
   .post-6 {
     grid-column: 3;
     grid-row: 3;
+  }
+}
+
+@media (min-width: 1600px) {
+  .blogs-news-container__left h3 {
+    margin-left: 10px;
+    padding: 10px;
+    text-align: start;
+    margin-left: 60px;
+  }
+  .blogs-posts__article img {
+    width: 97%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
   }
 }
